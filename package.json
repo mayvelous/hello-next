@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
-    "build": "next build",
     "now-build": "next build",
-    "start": "next start -p %PORT%",
+    "build": "next build",    
+    "export": "next export",
+    "start": "cross-env NODE_ENV=production node server.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
